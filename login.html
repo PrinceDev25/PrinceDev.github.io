@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Website</title>
+
+    <script>
+        function disp()
+        {
+        var a=new Date();
+        var i=a.toLocaleTimeString();
+        d.innerHTML=i;
+        }
+        </script>
+</head>
+
+<body onload="disp()">
+    <div class="hadder">
+        <nav class="navbar">
+            <div class="nsit">NSIT</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="sign_up.html">Sign Up</a></li>
+            </ul>
+            <div id="d"></div>
+        </nav>
+    </div>
+    <script>
+        setInterval("disp()",1000);
+        </script>
+
+
+    <section class="content">
+        <h2>Login Form</h2>
+
+        <!-- Login Form -->
+        <form class="login-form">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+            <div class="signup-link">
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </div>
+        </form>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo nisi tenetur voluptatibus?
+            Reprehenderit et tempora unde ratione cum ipsam non, dolorum expedita autem. Odio, beatae obcaecati
+            nesciunt ipsum facilis veniam.</p>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 NSIT. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
